@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/black"
+    android:background="#000000"
     tools:context=".SplashScreen">
 
     <ImageView
@@ -13,7 +13,7 @@
         android:layout_height="80dp"
         android:layout_centerInParent="true"
         android:layout_marginTop="14dp"
-        android:src="@drawable/video" />
+        android:src="@drawable/ic_videocall" />
 
     <TextView
         android:layout_width="match_parent"
@@ -22,8 +22,17 @@
         android:layout_marginTop="14dp"
         android:fontFamily="serif-monospace"
         android:gravity="center"
-        android:text="Zego Calling"
+        android:text="@string/app_name"
         android:textColor="@color/white"
         android:textSize="30dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:indeterminateTint="@color/white"
+        />
 
 </RelativeLayout>
